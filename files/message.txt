@@ -1,0 +1,28 @@
+Introduction
+Node.js is a platform (server-side) which is built on google chrome's javascript v8 engine. It is open source , cross platform and is capable of generating real time web applications. It uses event-driven, non-blocking I/O operation model which makes it efficient and light-weight. It is developed by Ryan Dahl with the team of other developers working at joyent in 2009. Its initial release only supports linux. It is written in C,C++ and javascript. It's package ecosystem 'NPM' is the largest ecosystem of open source libraries in the world.
+Installation
+Based on the architecture of your Operating System, you can download the latest version of node.js from the downloads page of node's official website :
+Once you are done with the download , open any text editor and start coding. Some examples of text editors are Atom , Notepad++ , Visual Studio Code , Sublime Text .
+All node.js files are stored with the extension ".js" just like JavaScript.
+Hello World in Node js
+Let's follow the ritual of programming and start by creating a program which will print hello world on the console as output. This code-snippet is as simple as it can be.
+//file-name : hello-world-in-node.js console.log('hello world');
+You can run the above code using the following command :
+>node hello-world-in-node.js Create a Server in node js
+• Node provide us with the inbuilt   module which we can use to create the server. Get the access to the module by using require
+• Mention the host i.e. localhost (127.0.0.1) to serve it locally.
+• Mention the port. We are using port : 3000 for our example.
+• Create a server using the createServer() method. createServer()method takes a callback function as
+arguments. This callback is executed each time a request is received.
+• The two arguments of createServer() method are
+request : which contains all the information related to client's request such as URL, custom headers , client info , etc.
+: which is used to return the data back to the client.
+• is an inbuilt method which is used to send the
+status code and the MIME type
+• And after that we are just Printing the value on the console using console.log() function.
+• response.end() is an inbuilt function which is used to tell the server that the request has been
+fulfilled.Along with that we can also send one response using this.
+• server.listen() is an inbuilt method used to bind to the port an start listening for incoming connections.
+• Import required modules: We use the require directive to load Node.js modules.
+• Create server: A server which will listen to client's requests similar to Apache HTTP Server.
+• Read request and return response: The server created in an earlier step will read the HTTP request made by the client which can be a browser or a console and return the response.
