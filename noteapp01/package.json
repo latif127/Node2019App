@@ -1,0 +1,11 @@
+{
+  "name": "noteapp01",
+  "version": "1.0.0",
+  "description": "Fist Node Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdul Latif",
+  "license": "ISC"
+}
